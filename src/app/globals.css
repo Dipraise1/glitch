@@ -8,17 +8,22 @@
   --glow-shadow: 0 0 8px color-mix(in srgb, var(--primary) 50%, transparent);
 }
 
+/* Force dark theme regardless of system preference */
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #ffffff;
-    --foreground: #171717;
-    --primary: #6b006b;
-    --accent: #00cc77;
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #a100a1;
+    --accent: #00ff99;
   }
 }
 
+html {
+  background: #000000;
+}
+
 body {
-  background: var(--background);
+  background: #000000;
   color: var(--foreground);
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
